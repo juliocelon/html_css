@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div
+        {
+            /* content size: */
+            width: 250px;
+            height: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .title
+        {
+            /* content size: */
+            width: 300px;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        .remarkable
+        {
+            font-weight: bold;
+        }
+        .group-container
+        {
+            /* content size: */
+            width: 500px;
+            height: 900px;
+
+            background-color: #AEB6BF;
+            padding: 10px;
+        }
+        .m1
+        {
+            background-color: red;
+            padding: 5px;
+            border: 4px solid black;
+            margin: 8px;
+
+        }
+        .m2
+        {
+            background-color: yellow;
+            padding: 5px;
+            border: 40px solid orange;
+            margin: 8px;
+        }
+
+        .group-container2
+        {
+            /* content size: */
+            width: 500px;
+            height: 800px;
+
+            background-color: #2471c9;
+            color: white;
+            padding: 10px;
+        }
+        .m3
+        {
+            background-color: red;
+            color: black;
+            padding: 5px;
+            border: 4px solid black;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+        .m4
+        {
+            background-color: yellow;
+            color: black;
+            padding: 5px;
+            border: 40px solid orange;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+
+        .group-container3
+        {
+            /* content size: */
+            width: 1500px;
+            height: 300px;
+
+            background-color: #1d712b;
+            color: white;
+            padding: 10px;
+            display: flex;
+        }
+
+        .group-container4
+        {
+            /* content size: */
+            width: 500px;
+            height: 700px;
+
+            background-color: #3d12da;
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <section class="title"><h1>CSS Boxing model</h1></section>
+
+    <div class="group-container">
+        <h2>Container 1</h2>
+        <p>With 'box-sizing' property not defined (on each div)</p>
+        <p>Total div size = width + height + padding + border</p>
+        <p>Additional note: there´s a collapse of margins between each div, </p>
+        <p>  to solve it, check Container 4</p>
+        <div class="m1">
+            <p>width: 250px; height: 250px;</p>
+            <p>padding: 5px;</p>
+            <p>border: 4px solid black</p>
+            <p>margin: 8px;</p>
+            <h3 class="remarkable">box-sizing no defined</h3>
+        </div>
+
+        <div class="m2">
+            <p>width: 250px; height: 250px;</p>
+            <p>padding : 5px;</p>
+            <p>border: 8px solid orange;</p>
+            <p>margin: 8px;</p>
+            <h3 class="remarkable">box-sizing no defined</h3>
+        </div>
+    </div>
+
+    <div class="group-container2">
+        <h2>Container 2</h2>
+        <h3 class="remarkable">box-sizing: border-box;</h3>
+        <p>With 'box-sizing: border-box;' (on each div)</p>
+        <p>the size of width and height, is respected without the sizes of padding, border or margin</p>
+        <p>Total div size = 250px x 250px </p>
+        <div class="m3">
+            <p>width: 250px; height: 250px;</p>
+            <p>padding: 5px;</p>
+            <p>border: 4px solid black</p>
+            <p>margin: 8px;</p>
+            <h3 class="remarkable">box-sizing: border-box;</h3>
+        </div>
+
+        <div class="m4">
+            <p>width: 250px; height: 250px;</p>
+            <p>padding : 5px;</p>
+            <p>border: 8px solid orange;</p>
+            <p>margin: 8px;</p>
+            <h3 class="remarkable">box-sizing: border-box;</h3>
+        </div>
+    </div>
+
+    <div class="group-container3">
+        <h2>Container 3. </h2>
+        <h2 class="remarkable">  display: flex;</h2>
+        <p>- Property defined on the container</p>
+        <div class="m3"></div>
+        <div class="m4"></div>
+    </div>
+
+    <div class="group-container4">
+        <h2>Container 4. </h2>
+        <h3 class="remarkable">display: flex;</h3>
+        <h3 class="remarkable">flex-direction: column;</h3>
+        <p>- Properties defined on the container 4</p>
+        <p>- With 'display: flex;' there isn´t collapse of margins between divs</p>
+        <div class="m3">
+            <p>margin: 8px;</p>
+        </div>
+
+        <div class="m4">
+            <p>margin: 8px;</p>
+        </div>
+    </div>
+
+</body>
+</html>

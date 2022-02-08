@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+                div
+        {
+            /* content size: */
+            width: 250px;
+            height: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .title
+        {
+            /* content size: */
+            width: 300px;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .container1
+        {
+            width: 500px;
+            height: 500px;
+            background-color: papayawhip;
+
+            position: relative;
+            top: 20px;
+        }
+        .item1
+        {
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="title"><h1>CSS Positions</h1></section>
+
+    <div class="container1">
+        position: relative;<br>
+        top: 20px;
+        <div class="item1">
+            position: absolute;<br>
+            right: 0px;
+        </div>
+    </div>
+</body>
+</html>
