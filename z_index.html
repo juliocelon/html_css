@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z_index</title>
+    <style>
+        body{
+            background-color: #F2F3F4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div
+        {
+            position: absolute;
+        }
+        .c2
+        {
+            background-color: blue;
+            position: relative;
+            top: 150px;
+            width: 100%;
+        }
+        .container1
+        {
+            background-color: red;
+            width: 250px;
+            height: 120px;
+        }
+        .container2
+        {
+            background-color: green;
+            width: 400px;
+            height: 80px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container3
+        {
+            background-color: red;
+            width: 250px;
+            height: 60px;
+            z-index: 2;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container4
+        {
+            background-color: green;
+            width: 300px;
+            height: 130px;
+            z-index: 1;
+        }
+
+        .c3
+        {
+            position: relative;
+            top: 320px;
+            width: 100%;
+        }
+        .container5
+        {
+            background-color: red;
+            width: 250px;
+            height: 160px;
+            z-index: 2;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container6
+        {
+            background-color: green;
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            z-index: 1;
+
+        }
+        .container55
+        {
+            background-color: grey;
+            width: 350px;
+            height: 130px;
+            padding: 10px;
+            z-index: 3;
+        }
+        .explanation
+        {
+            background-color: #85C1E9;
+            position: relative;
+            top: 280px;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <div class="c1">
+        <div class="container1">Container 1</div>
+        <div class="container2">Container Green. <br>By its position on the html (down Container Red), <br> This contanier is up to Container Red </div>
+    </div>
+
+    <div class="c2">
+        <div class="container3">Container Red. <br> z-index:2;</div>
+        <div class="container4"><br><br><br><br>Container Green. <br>z-index:1;</div>
+    </div>
+
+    <div class="c3">
+        <div class="container5">Container Red. <br> z-index:2;</div>
+
+        <div class="container6">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Container Green. <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;z-index:1;<br><br><br><br><br>
+            <div class="container55"><br><br><br>Container Grey. <br> z-index:3; <br> Son of Container Green</div>
+        </div>
+        <p class="explanation">Grey has z-index bigger (3) than Red(2), but Gray is a -div- inside of Green, so, never will have priority bigger than its father (Green)</p>
+    </div>
+</body>
+</html>
