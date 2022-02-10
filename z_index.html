@@ -16,7 +16,6 @@
         }
         .c2
         {
-            background-color: blue;
             position: relative;
             top: 150px;
             width: 100%;
@@ -86,31 +85,36 @@
         }
         .explanation
         {
-            background-color: #85C1E9;
             position: relative;
             top: 280px;
+            padding-bottom: 25px;
         }
     </style>
 </head>
 <body>
     <h1>z-index</h1>
+    <p>Case 1</p>
     <div class="c1">
         <div class="container1">Container 1</div>
         <div class="container2">Container Green. <br>By its position on the html (down Container Red), <br> This contanier is up to Container Red </div>
     </div>
 
+    
     <div class="c2">
+        <p>Case 2</p>
         <div class="container3">Container Red. <br> z-index:2;</div>
         <div class="container4"><br><br><br><br>Container Green. <br>z-index:1;</div>
     </div>
 
+   
     <div class="c3">
+        <p>Case 3</p>
         <div class="container5">Container Red. <br> z-index:2;</div>
 
         <div class="container6">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Container Green. <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;z-index:1;<br><br><br><br><br>
             <div class="container55"><br><br><br>Container Grey. <br> z-index:3; <br> Son of Container Green</div>
         </div>
-        <p class="explanation">Grey has z-index bigger (3) than Red(2), but Gray is a -div- inside of Green, so, never will have priority bigger than its father (Green)</p>
+        <p class="explanation">On Case 3, Grey has z-index bigger (3) than Red(2), but Gray is a -div- inside of Green, so, never will have priority bigger than its father (Green)</p>
     </div>
 </body>
 </html>
