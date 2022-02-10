@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Positions</title>
     <style>
-                div
+        body{
+            background-color: #F2F3F4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div
         {
             /* content size: */
             width: 250px;
@@ -25,8 +29,8 @@
         .container1
         {
             width: 500px;
-            height: 500px;
-            background-color: papayawhip;
+            height: 300px;
+            background-color: #85C1E9;
 
             position: relative;
             top: 20px;
@@ -36,15 +40,45 @@
             color: white;
             width: 200px;
             height: 200px;
-            background-color: purple;
+            background-color: #0B02BE;
 
             position: absolute;
             right: 0px;
         }
+
+        nav
+        {
+            color: white;
+            width: 100%;
+            height: 100px;
+            background-color: #0B02BE;
+            position:fixed;
+            top: 0;
+        }
+        .onNav
+        {
+            position: absolute;
+            left: 600px;
+            width: 500px;
+
+        }
+
+        ul p
+        {
+            position: sticky;
+            top:80px;
+            color: white;
+            background-color: #2E86C1;
+        }
+
+        li
+        {
+            background-color: #85C1E9;;
+        }
     </style>
 </head>
 <body>
-    <section class="title"><h1>CSS Positions</h1></section>
+    <nav><div class="onNav"><h1>CSS Positions</h1>position:fixed; top:0;       width: 100%; height: 30px;</div></nav>
 
     <div class="container1">
         position: relative;<br>
@@ -54,5 +88,108 @@
             right: 0px;
         </div>
     </div>
+
+    <ul>
+        <p>List 1 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ul>
+        <p>List 2 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 3 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 4 - position: sticky; top:60px; </p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 5 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 6 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 7 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 8 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 9 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 10 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 1 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ul>
+        <p>List 2 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 3 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 4 - position: sticky; top:60px; </p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 5 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 6 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 7 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 8 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 9 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <p>List 10 - position: sticky; top:60px;</p>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
 </body>
 </html>
