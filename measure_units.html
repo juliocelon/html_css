@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure units</title>
+    <style>
+
+        html
+        {
+            font-size: 62.5%;
+            /* font-size: calc((100% * 10) / 16); */
+            /* We change the size of font-size on html, so that 1 rem is equal to 10px */
+        }
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+        }
+
+        div p
+        {
+            font-size: 1rem;
+            /* by default, 1rem = 16px , to make it equal to 10px, we changed the font-size on html */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>Message 1. font-size: 1rem; 1rem=16px</p>
+</body>
+</html>
