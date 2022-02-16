@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Render Engine on Browsers</h1>
+        <p>
+            The main function of a browser engine is to transform the HTML documents and other resources of a web page into an interactive visual representation on the user's device (this function is called rendering).
+        </p>
+    </section>
+
+
+    <section>
+        <h1>Selectors</h1>
+        <h2>Basics</h2>
+        
+        type: div {...} <br> 
+        class: .elemento {...} <br> 
+        ID: #id-del-elemento <br> 
+        attributte: a[href="..."]{...} <br> 
+        universal: *{...} <br> 
+
+        <h2>Combiners</h2>
+        
+        Descendant: div p <br> 
+        direct child: div > p <br> 
+        adyacent element: div + p <br> 
+        General of brothers: div ~ p <br> 
+
+        <h2>Pseudoclasses</h2>
+        
+        Pseudoclasses allow us to get to those actions that the user does. <br>
+
+        :activate <br>
+        :focus <br>
+        :hover <br>
+        :nth-child(n) <br>
+
+        <h2>Pseudo elements</h2>
+
+        Pseudo-elements allow us to access HTML elements that are not accessible with the selectors already seen.
+
+        ::after <br>
+        ::before<br>
+        ::first-letter<br>
+        ::placeholder<br>
+        The pseudo-class is written with : and the pseudo-elements are written with ::<br>
+
+    </section>
+
+
+    <section>
+        <h1>Specificity</h1>
+
+        hierarchy of importance in css:<br><br>
+        !important = 10000<br>
+        online styles = 1000<br>
+        #id=100<br>
+        .classes= 10<br>
+        pseudo-classes and pseudo-elements =10<br>
+        select universal = 0<br>
+    </section>
+
+</body>
+</html>
